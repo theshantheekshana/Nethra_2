@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@theme{--color-navy:#0b1030;--color-royal:#3b1a6e;--color-gold:#c9a24b;--color-cream:#f6efdc;}
+body{font-family:'Noto Sans Sinhala',system-ui,sans-serif;background:#0b1030;color:#f6efdc;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.sheet{width:210mm;max-width:100%;margin:0 auto 10mm}
+.cover{page:cover;background:linear-gradient(160deg,#0b1030 30%,#3b1a6e);color:#f6efdc;min-height:297mm;break-after:page;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20mm;box-sizing:border-box}
+.body{page:body;background:#f6efdc;color:#1a1530;padding:14mm;box-sizing:border-box}
+.body p{margin:0 0 3mm;line-height:1.95;font-size:11pt;text-align:justify}
+.body h2{font-family:'Noto Serif Sinhala',serif;color:#3b1a6e;font-size:20pt;border-bottom:1.5px solid #c9a24b;margin:8mm 0 4mm;break-after:avoid}
+.serif{font-family:'Noto Serif Sinhala',serif}
+@page{size:A4;margin:0}
+@page body{margin:18mm 14mm 20mm;@top-center{content:"NETHRA · PERSONAL LIFE READING";font-size:8pt;color:#c9a24b}@bottom-center{content:counter(page);font-size:9pt;color:#3b1a6e}}
+@media print{.no-print{display:none!important}body,html{background:#f6efdc}.body{padding:0;background:transparent}.sheet{width:auto;margin:0}}

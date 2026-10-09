@@ -1,0 +1,25 @@
+export const GROUPS=['පෞද්ගලික පැතිකඩ','කාලය හරහා ගමන','වෘත්තීය සහ අධ්‍යාපනය','හදවත සහ පවුල','මූල්‍ය, වාසනාව සහ නාමය','මාර්ගය ඉදිරියට'];
+const S=[
+['profile','පෞද්ගලික අංක පැතිකඩ',0,'Explain each core number (Life Path, Destiny, Soul Urge, Personality, Birthday, Maturity, Personal Year) in 2-3 sentences, mentioning how it was calculated.'],
+['overall','සමස්ත ජීවන රටාව',0,'Core personality, strengths, weaknesses, emotional tendencies, thinking, decisions, communication, independence, leadership, adaptability, life themes. If birthTime is given add a brief symbolic time-of-day note.'],
+['past','අතීතය',1,'Symbolic past tendencies: childhood, development, family environment, emotions, lessons, turning points. Never invent events.'],
+['present','වර්තමානය',1,'Present phase using Personal Year/Month: growth, career, money, relationships, family, emotions, opportunities, challenges.'],
+['future','අනාගතය',1,'Upcoming themes from the timeline cycles: career, relationships, family, money, growth, transitions. No absolute predictions.'],
+['career','රැකියා / වෘත්තීය',2,'Work environments, strengths, leadership, teamwork, communication, creativity, analysis, entrepreneurship, career changes, growth, challenges.'],
+['business','ව්‍යාපාරික ජීවිතය',2,'Entrepreneurial tendencies, leadership, risk, decisions, partnerships, solo business, environments, challenges, relevant name numerology. No success guarantees.'],
+['education','අධ්‍යාපනය',2,'Learning style, concentration, creativity, analysis, environments, strengths, challenges.'],
+['love','ආදරය සහ සබඳතා',3,'Emotional style, expressing love, communication, attachment, strengths, challenges, ideal environment, suitable partner qualities.'],
+['marriage','විවාහය',3,'Marriage tendencies, maturity, communication, responsibilities, compatibility, challenges, compatible spouse qualities, favorable periods from the timeline. No exact dates.'],
+['partner','අනාගත සහකරු / සහකාරිය',3,'Symbolic partner qualities, communication, emotions, dynamics, compatibility themes. State clearly this is a numerology interpretation, not identification of a real person.'],
+['family','පවුල් ජීවිතය',3,'Responsibilities, emotional patterns, communication, relationships, household tendencies, challenges, strengths.'],
+['parents','දෙමාපියන්',3,'Relationship with parents: emotional dynamics, responsibilities, communication, influence. Invent no facts about the parents.'],
+['children','දරුවන් සහ දෙමාපිය භූමිකාව',3,'Parenting tendencies, style, emotional connection, responsibilities. Never predict number of children, pregnancy or fertility.'],
+['finance','මූල්‍ය ජීවිතය',4,'Relationship with money, saving, spending, risk, discipline, opportunities, business vs employment. No wealth guarantees.'],
+['luckynum','වාසනාවන්ත අංක',4,'Explain lucky.primary and lucky.supporting and the themes they relate to; symbolic suggestions only.'],
+['luckydays','වාසනාවන්ත දින',4,'Explain lucky.days and the reasoning (Life Path and Destiny); no guaranteed luck.'],
+['luckycolors','වාසනාවන්ත වර්ණ',4,'Explain lucky.colors symbolically.'],
+['letters','නාම අක්ෂර බලපෑම',4,'Symbolic meaning of the most significant letters in the legal and common names (use letters arrays); compare the two.'],
+['namechange','නාම වෙනස් කිරීමේ විශ්ලේෂණය',4,'Compare legal vs common name numbers, differences, possible symbolic effects. Phrase as "අංක විද්‍යාත්මක දෘෂ්ටිකෝණයෙන් නම වෙනස් කිරීම පිළිබඳව සලකා බැලිය හැකි පැති..."; never say the person must change a name.'],
+['periods','වැදගත් ජීවන කාල පරිච්ඡේද',5,'Walk through the timeline years and their Personal Year themes as tendencies, not guaranteed events.'],
+['summary','අවසාන ජීවන සාරාංශය',5,'Powerful summary: strongest qualities, challenges, career, relationships, marriage, family, finance, future, name theme, key advice. End with an elegant NETHRA closing message.']];
+export const SECTIONS=S.map(([id,title,group,brief])=>({id,title,group,brief}));
